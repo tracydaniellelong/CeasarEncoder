@@ -1,3 +1,3 @@
-def encode()
+def encode(str)
 
 end
