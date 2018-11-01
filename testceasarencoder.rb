@@ -17,4 +17,7 @@ class Testing < Minitest::Test
 	def test_with_numbers
 		assert_equal("mx mw 2:96 tq.", encode("It is 8:52 pm."))
 	end
+	def test_if_not_a_string
+		assert_equal("", encode(6767))
+	end
 end
