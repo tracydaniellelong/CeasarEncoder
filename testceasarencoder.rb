@@ -18,6 +18,6 @@ class Testing < Minitest::Test
 		assert_equal("mx mw 2:96 tq.", encode("It is 8:52 pm."))
 	end
 	def test_if_not_a_string
-		assert_equal("", encode(6767))
+		assert_equal("Enter a string", encode(6767))
 	end
 end
