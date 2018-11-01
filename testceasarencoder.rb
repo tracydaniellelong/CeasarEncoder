@@ -11,4 +11,7 @@ class Testing < Minitest::Test
 	def test_a_quote
 		assert_equal("xs 'uysxi' liv", encode("To 'Quote' her"))
 	end
+	def test_a_sentence
+		assert_equal("qc hsk exi qc gshi.", encode("My dog ate my code."))
+	end
 end
