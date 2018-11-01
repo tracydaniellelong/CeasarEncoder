@@ -20,4 +20,10 @@ class Testing < Minitest::Test
 	def test_if_not_a_string
 		assert_equal("Enter a string", encode(6767))
 	end
+	def test_for_more_numbers
+		assert_equal("Enter a string", encode(59))
+	end
+	def test_for_symbols
+		assert_equal("*", encode("*"))
+	end
 end
