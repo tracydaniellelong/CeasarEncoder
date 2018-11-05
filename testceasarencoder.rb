@@ -3,25 +3,25 @@ require_relative "ceasarencoder.rb"
 
 class Testing < Minitest::Test
 	def test_encode_tracy
-		assert_equal("xvegc", encode("tracy"))
+		assert_equal("ywfhd", encode("tracy"))
 	end
 	def test_encode_with_uppercase
-		assert_equal("herkiv", encode("DANGER"))
+		assert_equal("IFSLJW", encode("DANGER"))
 	end
 	def test_a_quote
-		assert_equal("xs 'uysxi' liv", encode("To 'Quote' her"))
+		assert_equal("Yt 'Vztyj' mjw", encode("To 'Quote' her"))
 	end
 	def test_a_sentence
-		assert_equal("qc hsk exi qc gshi.", encode("My dog ate my code."))
+		assert_equal("Rd itl fyj rd htij.", encode("My dog ate my code."))
 	end
 	def test_with_numbers
-		assert_equal("mx mw 2:96 tq.", encode("It is 8:52 pm."))
+		assert_equal("Ny nx 2:96 ur.", encode("It is 8:52 pm."))
 	end
 	def test_if_not_a_string
-		assert_equal("Enter a string", encode(6767))
+		assert_equal("1212", encode(6767))
 	end
 	def test_for_more_numbers
-		assert_equal("Enter a string", encode(59))
+		assert_equal("38", encode(93))
 	end
 	def test_for_symbols
 		assert_equal("*", encode("*"))
