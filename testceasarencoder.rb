@@ -39,13 +39,13 @@ class Testing < Minitest::Test
 		assert_equal("WsxonWsxnc", encode("MinedMinds", 10))
 	end
 	def test_for_shift_by_0
-		assert_equal("Enter a number between 2 and 25", encode("Important!", 0))
+		assert_equal("Cannot shift by zero", encode("Important!", 0))
 	end
 	def test_for_shift_by_1
-		assert_equal("Enter a number between 2 and 25", encode("Shew, that was a close one!", 1))
+		assert_equal("Tifx, uibu xbt b dmptf pof!", encode("Shew, that was a close one!", 1))
 	end
 	def test_for_shift_by_26
-		assert_equal("Enter a number between 2 and 25", encode("It is 9:33 am.", 26))
+		assert_equal("Cn cm 9:33 ug.", encode("It is 9:33 am.", 26))
 	end
 
 end

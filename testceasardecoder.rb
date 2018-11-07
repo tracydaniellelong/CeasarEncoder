@@ -35,13 +35,10 @@ class Testing < Minitest::Test
 	def test_for_shift_by_10
 		assert_equal("MinedMinds", decode("WsxonWsxnc", 10))
 	end
-	def test_for_shift_by_0
-		assert_equal("Enter a number between 2 and 25", decode("slkdjfhaw", 0))
-	end
 	def test_for_shift_by_1
-		assert_equal("Enter a number between 2 and 25", decode("askdjfnsd", 1))
+		assert_equal("Shew, that was a close one!", decode("Tifx, uibu xbt b dmptf pof!", 1))
 	end
 	def test_for_shift_by_26
-		assert_equal("Enter a number between 2 and 25", decode("oweu928yehkjhs", 26))
+		assert_equal("It is 9:33 am.", decode("Cn cm 9:33 ug.", 26))
 	end
 end
