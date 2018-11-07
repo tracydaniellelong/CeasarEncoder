@@ -32,4 +32,7 @@ class Testing < Minitest::Test
 	def test_for_shift_by_3
 		assert_equal("wudfb", encode("tracy", 3))
 	end
+	def test_for_shift_by_27
+		assert_equal("", encode("something", 27))
+	end
 end
