@@ -1,10 +1,11 @@
-def decode(str)
-	decoded = ""
-	if str.class != String
-		decoded = str.to_s.tr('f-z, a-e, F-Z, A-E, 4-9, 0-3', 'a-u, v-z, A-U, V-Z, 0-5, 6-9')
-	elsif
-		decoded << str.tr('f-z, a-e, F-Z, A-E, 4-9, 0-3', 'a-u, v-z, A-U, V-Z, 0-5, 6-9')
-	end	
-	return decoded
+def decode(str, day)
+	case day 
+	when (2..25)
+		lower = 'a'.ord + day
+		upper = 'A'.ord + day
+		str.to_s.tr("#{upper.chr}-ZA-#{(upper - 1).chr}#{lower.chr}-za-#{(lower - 1).chr}", 'A-Za-z')	
+	else
+		"Enter a number between 2 and 25"
+	end
 end
 
