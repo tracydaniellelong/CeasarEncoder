@@ -3,7 +3,7 @@ require_relative "ceasarencoder.rb"
 
 class Testing < Minitest::Test
 	def test_encode_tracy
-		assert_equal("ywfhd", encode("tracy"))
+		assert_equal("ywfhd", encode("tracy", 5))
 	end
 	def test_encode_with_uppercase
 		assert_equal("IFSLJW", encode("DANGER"))
@@ -18,12 +18,15 @@ class Testing < Minitest::Test
 		assert_equal("Ny nx 2:96 ur.", encode("It is 8:52 pm."))
 	end
 	def test_if_not_a_string
-		assert_equal("1212", encode(6767))
+		assert_equal("0101", encode(6767))
 	end
 	def test_for_more_numbers
-		assert_equal("38", encode(93))
+		assert_equal("37", encode(93))
 	end
 	def test_for_symbols
 		assert_equal("*", encode("*"))
+	end
+	def test_for_symbols_2
+		assert_equal("@", encode("@"))
 	end
 end
