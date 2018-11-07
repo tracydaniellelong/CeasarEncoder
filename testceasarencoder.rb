@@ -29,4 +29,7 @@ class Testing < Minitest::Test
 	def test_for_symbols_2
 		assert_equal("@", encode("@", 5))
 	end
+	def test_for_shift_by_3
+		assert_equal("", encode("tracy", 3))
+	end
 end
