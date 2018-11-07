@@ -35,8 +35,11 @@ class Testing < Minitest::Test
 	def test_for_shift_by_2
 		assert_equal("uqogvjkpi", encode("something", 2))
 	end
+	def test_for_shift_by_10
+		assert_equal("WsxonWsxnc", encode("MinedMinds", 10))
+	end
 	def test_for_shift_by_0
-		assert_equal("WsxonWsxnc", encode("MinedMinds", 0))
+		assert_equal("", encode("Important!", 0))
 	end
 	def test_for_shift_by_1
 		assert_equal("", encode("Shew, that was a close one!", 1))
